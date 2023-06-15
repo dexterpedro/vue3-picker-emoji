@@ -1,41 +1,32 @@
-# vue3-discord-picker
+# vue3-picker-emoji
 ____
 
-![VueJS](https://img.shields.io/badge/vuejs-%2335495e.svg?&style=for-the-badge&logo=vue.js&logoColor=%234FC08D)  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?&style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-[![NPM](https://nodei.co/npm/vue3-discordpicker.png)](https://nodei.co/npm/vue3-discordpicker/)
-
 A new emoji / gif picker for your app !
-Based on discord.
 
 This components is available only in vue3.
 
 🚧 Rework in typescript and composition-api soon.
 
-### Example
-- [Live demo 🎉](https://en-zo.dev/vue3-discordpicker)
-- [Code demo 🎈](https://github.com/enzostvs/vue3-discordpicker/blob/master/examples/Index.vue)
-
 ### Install
 ```js
-npm install vue3-discordpicker
+npm install vue3-picker-emoji
 ```
 
 ### Global
 ```js
 import Vue from 'vue'
-import DiscordPicker from 'vue3-discordpicker'
+import PickerEmoki from 'vue3-picker-emoji'
 
-Vue.use(DiscordPicker, /* { default options with global component } */)
+Vue.use(PickerEmoki, /* { default options with global component } */)
 ```
 
 ### Local registration
 ```js
-import DiscordPicker from 'vue3-discordpicker'
+import PickerEmoki from 'vue3-picker-emoji'
 
 export default {
   components: {
-    DiscordPicker
+    PickerEmoki
   }
 }
 ```
@@ -58,8 +49,8 @@ ____
 "search": `String`
 "gif": `String`
 "emoji": `String`
-"category": `String` (add %REPLACE% in your URL to change with slug, example: `https://en-zo.dev/vue-discord-emojipicker/categories/%REPLACE%.svg` transform into https://en-zo.dev/vue-discord-emojipicker/categories/animals.svg`)
-"variation": `String` (same at category, example: `https://en-zo.dev/vue-discord-emojipicker/variations/variation_%REPLACE%.svg` transform into `https://en-zo.dev/vue-discord-emojipicker/variations/variation_0.svg` (0 - 4))
+"category": `String` (add %REPLACE% in your URL to change with slug, example: `/categories/%REPLACE%.svg` transform into /categories/animals.svg`)
+"variation": `String` (same at category, example: `/variations/variation_%REPLACE%.svg` transform into `/variations/variation_0.svg` (0 - 4))
 
 ### Categories
 All categories list:
